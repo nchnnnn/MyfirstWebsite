@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Jua&family=Mitr&family=Quicksand&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1D1D1D;
+}
+
+main {
+    width: 60%;
+    margin: 0 20%;
+    background-color: #454545;
+}
+
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    background-color: rgb(24, 24, 24, 50%);
+    padding: 2vh;
+}
+
+.headertext {
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+    transition: 200ms all ;
+}
+
+.headertext:hover {
+    color: #00eef7;
+    font-size: 1.5vw;
+    border-radius: 3px;
+    border: 1px solid black;
+    outline: 1.4px solid white;
+    padding: 2px;
+    transform: scale(1.2);
+}
+
+section{
+    background-color: #2e2e2e;
+    height: auto;
+}
+
+#Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: grey url(./PICTURES/Home.jpg) no-repeat ;
+    background-size: cover;
+    color: white;
+    width: auto;
+    padding: 2rem;
+    line-height: 15vh;
+    height: 90vh;
+    border: 3px solid #000000;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#Home #HH1 {
+    font-size: 10vh;
+    color: white;
+    
+}
+
+
+#Home .HH2 {
+    font-size: 8vh;
+    color: white;
+}
+
+@media screen and (max-width: 965px) {
+    #Home {
+        line-height: 12vh;
+    }
+
+    #Home #HH1, .HH2 {
+        font-size: 7vh;
+        transform: translate(10px, -50px);
+    }
+    
+}
+
+
+
+
+
+#Introduction {
+    background-image: url(./PICTURES/IBG.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    border: 3px solid #000000;
+}
+
+#Introduction .intro {
+    font-size: 34px;
+    font-family: 'Quicksand', sans-serif;
+    width: 60%;
+    color:aliceblue;
+    transform: translate(7.3rem, 8rem);
+    background-color: rgba(245, 245, 220, 0.233);
+    padding: 0.5rem;
+    border: 3px solid white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+
+.p1 {
+    font-size: 3vw;
+    color: antiquewhite;
+    transform: translate(4em, 6.8rem);
+}   
+
+.IH1 {
+    font-weight: bold;
+    font-size: 4vw;
+    font-family: 'Mitr', sans-serif;
+    color: white;
+    transform: translate(20%, 7rem);
+}
+
+.hello {
+    position: absolute;
+    transform: translate(23rem, -20px);
+    max-width: 160px;
+}
+
+@media screen and (max-width: 965px) {
+
+    #Introduction .intro {
+        font-size: 1.3rem;
+        width: 60%;
+        transform: translate(120px, 150px);
+        
+    }
+    .p1 {
+        font-size: 45px;
+        transform: translate(100px, 100px);
+    }
+    .IH1 {
+        font-size: 50px;
+        transform: translate(100px, 100px);
+    }
+
+    .hello {
+        transform: translate(18em, -30px);
+        max-width: 130px;
+    }
+
+}
+
+#About {
+    background-image: linear-gradient(to right, rgb(71, 71, 71), rgb(32, 32, 32));
+    border: 3px solid #000000;
+    height: auto;
+
+}
+
+.mypic{
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.con-her{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 -100px;
+
+}
+
+.side{
+    height: 200px;
+}
+
+.her, .mypic {
+    height: 300px;
+
+}
+.side, .her, .mypic {
+    border: 3px solid #2de7ff;
+    border-radius: 20px;
+}
+
+
+
+.name {
+    display: block;
+    color: white;
+    position: relative;
+    text-decoration: underline;
+}
+
+.paragraph {
+    font-family: 'Jua', sans-serif;
+    font-size: 4vh;
+    margin: 0 10%;
+    text-indent: 2vw;
+    max-width: 100%;
+    color: #b5e1e2;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.INC {
+    color: white
+}
+
+
+
+.INC::after {
+    content: "";
+    background-image: url(./PICTURES/INC.png);
+    background-size: contain;
+    display: inline-block;
+    width: 20px; 
+    height: 15px; 
+    margin-left: 6px;
+    margin-top: 4px;
+}   
+
+.wants {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 1rem;
+    text-align: center;
+}
+
+.container {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    border: 3px solid rgb(0, 151, 151);
+    padding: 1rem;
+    border-radius: 10px;
+    color: antiquewhite;
+    margin-top:20px;
+    text-align: center;
+}
+
+.container ul li {
+    line-height: 2rem;
+}
+
+.container h1 {
+    background-color: #454545;
+    border-radius: 5px;
+    padding: 0.2rem;
+    width: max-content;
+    
+}
+
+
+.H::before {
+    width: 20px;
+    height: 20px;
+    content: "H";
+    display: none;
+    color: rgb(250, 71, 71);
+}
+
+.H:hover::before{
+    display: contents;
+}
+
+
+.dream {
+    text-align: center;
+    font-size: larger;
+    color: whitesmoke;
+}
+
+.closing {
+    color: white;
+    font-size: 1.2rem;
+    
+    text-align: center;
+}
+
+
+@media screen and (max-width: 965px) {
+    .mypic,.her {
+        height: 250px;
+    }
+    .name {
+        font-size: 20px;
+        
+
+    }
+    .paragraph {
+        padding: 50px 20px 20px 20px;
+        margin: 0 0;
+        font-size: 1rem;
+    }
+
+    .dream {
+        margin-bottom: 5%;
+    }   
+
+    .closing {
+        font-size: 1    rem;
+        margin-bottom: 5%;
+    }
+
+    .con-her{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 0 -20px;
+    }
+
+    .container ul li {
+        font-size: .5rem;
+        line-height: 1.5rem;
+    }
+    
+    .container h1 {
+        font-size: .9rem;
+        padding: 0.2rem;
+        width: max-content;
+    }
+}
+
+
+#Contact {
+    background: grey url(./PICTURES/Contact.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 90vh;
+    border: 3px solid #000000;
+}
+
+
+.contacts {
+    width: max-content;
+    padding: 1vw;
+    margin: 15% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(151, 151, 151, 0.075);
+    border-radius: 3%;
+    border: 3px solid rgba(151, 151, 151, 0.075);
+  }
+
+  ul {
+    list-style-type: none;
+    font-family: "Mitr", sans-serif;
+  }
+  
+  li .socmed {
+    text-decoration: none;
+    font-size: 2.4vw;
+    margin: 0.5vw 0;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    transition: 200ms ease-out;
+  }
+  
+  #NO::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f095";
+    margin-right: 2vw;
+  }
+  
+  #NO:hover {
+    color: lightgreen;
+  }
+  
+  #FB::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f39e";
+    margin-right: 2vw;
+  }
+  #FB:hover {
+    color: rgb(66, 103, 178);
+  }
+  
+  #IG::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f16d";
+    margin-right: 2vw;
+  }
+  
+  #IG:hover {
+    color: rgb(255, 91, 91);
+  }
+  
+  #TW::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f099";
+    margin-right: 2vw;
+  }
+  
+  #TW:hover {
+    color: #00acee;
+  }
+  
+  #email::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\40";
+    margin-right: 2vw;
+  }
+  
+  #email:hover {
+    color: rgb(150, 150, 150);
+  }
+  
+
+@media screen and (max-width: 965px) {
+    li {
+        line-height: 5vw;
+    }
+}
+
+
+#History {
+    color: white;
+    height: auto;
+    background-image: linear-gradient(to right, rgb(71, 71, 71), rgb(32, 32, 32));
+    border: 2px solid #000000;
+}
+
+.History {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.HH1{
+    margin: 40px 0 ;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(148, 196, 196);
+    
+    font-family: 'Mitr', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+a .HH1:hover {
+    color: cyan;
+}
+
+.HP {
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.GPIC {
+    width: 200px;
+    border: 3px solid cyan;
+    border-radius: 5px;
+}
+
+.GH1 {
+    text-align: center;
+    margin: 5% 0;
+    color: cyan;
+}
+
+
+.ELC, .MLNHS {
+    margin: 0 20px 10px 0;
+    float: left;
+    width: 30vw;
+    height: 35vh;
+    border: 3px solid cyan;
+}
+
+.History a {
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 965px) {
+    .HH1 {
+        font-size: 1.19rem;
+    }
+    
+}
